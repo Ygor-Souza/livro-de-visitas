@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
     <title>Inserir Mensagem</title>
-</head>
+  </head>
 
-<body>
-    <h2>Inserir Mensagem</h2>
+  <body>
+    <h2 class="titulo">Inserir Mensagem</h2>
     <form action="/livro_visitas" method="POST">
-        Titulo:
-        <input type="text" name="nome" value="" />
-        <br />
+      <label>Nome do Visitante</label>
+      <input type="text" name="nome_visitante" value="" />
+      <br />
+      <br />
 
-        <br />
-        Conteudo:
-        <textarea name="conteudo" cols="40" rows="4"></textarea>
+      <label> Titulo Mensagem:</label>
+      <input type="text" name="titulo" value="" />
+      <br />
 
-        <br />
-        <br />
-        <button type="submit">Cadastrar Mensagem</button>
+      <br />
+      <label>Conteudo:</label>
+      <textarea name="conteudo" cols="40" rows="4" maxlength="400"></textarea>
+
+      <br />
+      <br />
+      <button class="button" type="submit">Cadastrar Mensagem</button>
     </form>
-
-</body>
-
+  </body>
 </html>
